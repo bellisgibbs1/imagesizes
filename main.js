@@ -1,12 +1,9 @@
-const body = document.querySelector("body");
+const container = document.querySelector(".container");
 const images = document.querySelectorAll (".image");
 
 images.forEach(function (image) {
     image.addEventListener("click", function(e){
         e.preventDefault ();
-        
-        body.classList.toggle("big");
-        
-        });        
-
+        container.classList.toggle("image");
+    });        
 });
